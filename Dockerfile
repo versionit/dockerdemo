@@ -8,4 +8,5 @@ ADD index.html /var/www/html
 VOLUME /data
 WORKDIR /tmp
 ONBUILD ADD demo.html /tmp
+USER daemon
 HEALTHCHECK CMD ls -ld /abc || exit 1
